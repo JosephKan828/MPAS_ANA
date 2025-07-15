@@ -10,6 +10,13 @@ where $\sigma$ is static stability defined as
 $-\frac{1}{[\rho][\theta]}\frac{\partial [\theta]}{\partial p}$, where the square bracket means the average taken in time and longitude. The prime denotes the deviation from such average value. All the other symbols follow convention in meteorology.
 
 # Budget Analysis on different terms
+## Computation Procedure
+1. Select KW events based on space-time filter with 95\% single-tailed Z-test in vertical-integrated $Q_1$.
+2. Rolling events to the center of time series at specific longitude for composite, including $\alpha^\prime, \omega^\prime, Q_1^\prime$.
+3. Compute profile based on equation.
+4. Vertical profile (right panel for each figure) is mean over the wave period.
+5. Value shown as title of right panel is the vertically integrated value of the vertical profile.
+
 ## Result Table
 |Terms|Result (in modulus)|
 |:---:|:---:|
