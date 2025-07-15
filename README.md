@@ -27,7 +27,9 @@ $-\frac{1}{[\rho][\theta]}\frac{\partial [\theta]}{\partial p}$, where the squar
 |Gen + Conversion| CNTL (0.10e-3) > NCRF (0.03e-3) |
 
 The residual term (Tendency - (Generation + Conversion)):
+
 CNTL: -7.51e-5
+
 NCRF: -1.04e-5
 
 ## Generation $\left( \frac{R}{p C_p \sigma} \alpha^\prime Q_1^\prime \right)$
