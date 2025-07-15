@@ -64,3 +64,13 @@ $-\frac{1}{[\rho][\theta]}\frac{\partial [\theta]}{\partial p}$, where the squar
 
 ### Difference
 ![conversion_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Tendency/diff.png)
+
+## Generation + Conversion $\left( \frac{R}{p C_p \sigma} \alpha^\prime Q_1^\prime + \alpha^\prime \omega^\prime  \right)$
+### CNTL
+![CNTL conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Gen+Conv/CNTL.png)
+
+### NCRF
+![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Gen+Conv/NCRF.png)
+
+### Difference
+![conversion_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Gen+Conv/diff.png)
