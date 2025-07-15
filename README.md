@@ -15,6 +15,7 @@ $-\frac{1}{[\rho][\theta]}\frac{\partial [\theta]}{\partial p}$, where the squar
 3. Compute profile based on equation.
 4. Vertical profile (right panel for each figure) is mean over the wave period.
 5. Value shown as title of right panel is the vertically integrated value of the vertical profile.
+6. The difference profile is NCRF - CNTL, and the contour is the profile of CNTL
 
 ## Result Table
 |Terms|Result (in modulus)|
@@ -31,12 +32,18 @@ $-\frac{1}{[\rho][\theta]}\frac{\partial [\theta]}{\partial p}$, where the squar
 ### NCRF
 ![NCRF generation](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Generation/NCRF.png)
 
+### Difference
+![generation_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Generation/diff.png)
+
 ## Conversion $\left( \alpha^\prime \omega^\prime \right)$
 ### CNTL
 ![CNTL conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Conversion/CNTL.png)
 
 ### NCRF
 ![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Conversion/NCRF.png)
+
+### Difference
+![conversion_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Conversion/diff.png)
 
 ## $\alpha$ Variance $\left( \alpha^{\prime 2} \right)$
 ### CNTL
@@ -45,9 +52,15 @@ $-\frac{1}{[\rho][\theta]}\frac{\partial [\theta]}{\partial p}$, where the squar
 ### NCRF
 ![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Variance/NCRF.png)
 
+### Difference
+![conversion_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Variance/diff.png)
+
 ## $\alpha$ Variance Tendency $\left( \frac{1}{2\sigma} \alpha^{\prime 2} \right)$
 ### CNTL
 ![CNTL conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Tendency/CNTL.png)
 
 ### NCRF
 ![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Tendency/NCRF.png)
+
+### Difference
+![conversion_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Tendency/diff.png)
