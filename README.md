@@ -21,8 +21,10 @@ $-\frac{1}{[\rho][\theta]}\frac{\partial [\theta]}{\partial p}$, where the squar
 |Terms|Result (in modulus)|
 |:---:|:---:|
 |Generation| CNTL (0.43e-3) > NCRF (0.12e-3) |
+|LW Gen| CNTL (0.14e-6) > NCRF (-0.16e-6) |
+|Cu Gen| CNTL (0.25e-3) > NCRF(0.14e-3) |
 |Conversion| CNTL (-0.33e-3) > NCRF (-0.08e-3) |
-|Variance| NCRF (0.21e-3) > CNTL (0.33e-3) |
+|Variance| NCRF (0.33e-3) > CNTL (0.21e-3) |
 |Tendency| NCRF (2.96e-5) > CNTL (2.49e-5) |
 |Gen + Conversion| CNTL (0.10e-3) > NCRF (0.03e-3) |
 
@@ -41,6 +43,24 @@ NCRF: -1.04e-5
 
 ### Difference
 ![generation_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Generation/diff.png)
+
+## LW Generation $\left( \frac{R}{p C_p \sigma} \alpha^\prime Q_1^\prime \right)$
+![CNTL generation](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/LW_Generation/CNTL.png)
+
+### NCRF
+![NCRF generation](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/LW_Generation/NCRF.png)
+
+### Difference
+![generation_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/LW_Generation/diff.png)
+
+## CU Generation $\left( \frac{R}{p C_p \sigma} \alpha^\prime Q_1^\prime \right)$
+![CNTL generation](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Qc_Generation/CNTL.png)
+
+### NCRF
+![NCRF generation](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Qc_Generation/NCRF.png)
+
+### Difference
+![generation_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Qc_Generation/diff.png)
 
 ## Conversion $\left( \alpha^\prime \omega^\prime \right)$
 ### CNTL
