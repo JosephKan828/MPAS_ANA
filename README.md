@@ -81,3 +81,16 @@ NCRF: -1.04e-5
 
 ### Difference
 ![conversion_difference](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Gen+Conv/diff.png)
+## Tendency - ( Generation + Conversion )
+### CNTL
+![CNTL conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/CNTL_compare.png)
+
+### NCRF
+![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/NCRF_compare.png)
+## Residual
+### CNTL
+![CNTL conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Residual/CNTL.png)
+
+### NCRF
+![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/Residual/NCRF.png)
+
