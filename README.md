@@ -86,11 +86,11 @@ NCRF: -1.04e-5
 ![CNTL conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/CNTL_compare.png)
 
 ### NCRF
-![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/NCRF_compare.png)
+![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/NCRF_compare.png)
 ## Residual
 ### CNTL
 ![CNTL conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Residual/CNTL.png)
 
 ### NCRF
-![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/Residual/NCRF.png)
+![NCRF conversion](https://github.com/JosephKan828/MPAS_ANA/blob/main/Figure/EAPE/Residual/NCRF.png)
 
