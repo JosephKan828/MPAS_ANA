@@ -65,7 +65,7 @@ def main():
     axes.spines["right"].set_visible(False)
     plt.axvline(0, color="k", linewidth=0.5, linestyle="--")
     plt.yscale("log")
-    plt.legend()
+    plt.legend(fontsize=32)
     plt.yticks([200, 300, 400, 500, 600, 800, 1000],
                 ["200", "300", "400", "500", "600", "800", "1000"]
                 )
@@ -86,7 +86,7 @@ def main():
     axes.spines["right"].set_visible(False)
     plt.axvline(0, color="k", linewidth=0.5, linestyle="--")
     plt.yscale("log")
-    plt.legend()
+    plt.legend(fontsize=32)
     plt.yticks([200, 300, 400, 500, 600, 800, 1000],
                 ["200", "300", "400", "500", "600", "800", "1000"]
                 )
