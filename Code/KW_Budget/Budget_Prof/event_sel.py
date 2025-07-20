@@ -117,7 +117,6 @@ def main():
 
     def kel_curve(wn, ed): return 86400.0 * \
         np.sqrt(9.81*ed) * wn / (2*np.pi*6.371e6)
-
     kel_mask = np.where(
         (
             (wnm >= 1) & (wnm <= 15) &
@@ -130,6 +129,7 @@ def main():
             (frm <= kel_curve(wnm, 10)) & (frm >= kel_curve(wnm, 100))
         ), 1.0, 0.0
     )
+
 
     # reconstruct data
     def ifft2(data: np.ndarray) -> np.ndarray:
