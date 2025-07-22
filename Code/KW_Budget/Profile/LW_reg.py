@@ -18,7 +18,7 @@ def main():
 
     exp_list: list[str] = ["CNTL", "NCRF"]
 
-    var_list: list[str] = ["qc"]
+    var_list: list[str] = ["rthratenlw"]
 
     iter_list: list[tuple] = list(product(exp_list, var_list))
 
@@ -42,13 +42,11 @@ def main():
 
     for exp, var in iter_list:
         with nc.Dataset(fpath + f"/{exp}/{var}.nc") as ds:
-            data[var][exp] = ds[var][-360:][..., lat_lim, :].mean(axis=2)
+            data[var][exp] = ds[var][-360:][..., lat_lim, :].mean(axis=2) * 86400
 
         print(f"Finished: Loading {exp} {var}")
 
     print("Finished: Loading data")
-
-
 
     # Load events
     with open("/home/b11209013/2025_Research/AOGS/File/events.json", "r") as f:
@@ -58,11 +56,6 @@ def main():
     with open("/home/b11209013/2025_Research/AOGS/File/boundary.json", "r") as f:
         bnd = json.load(f)
         
-
-    data = {
-        "qc": {exp: data["qc"][exp] - data["qc"][exp].mean(axis=(0, -1), keepdims=True )
-        for exp in exp_list}
-    }
 
     # ==== 2. rolling data ==== #
     center_idx = 360 // 2
@@ -82,13 +75,13 @@ def main():
     plt.figure(figsize=(16, 9))
     p = plt.pcolormesh(
         np.linspace(-3.25, 3.75, 29), dims["lev"],
-        data_sel["qc"]["NCRF"] - data_sel["qc"]["CNTL"],
-        norm=TwoSlopeNorm(vcenter=0.0),
+        data_sel["rthratenlw"]["NCRF"] - data_sel["rthratenlw"]["CNTL"],
+        norm=TwoSlopeNorm(0.0),
         cmap="RdBu_r", shading="auto"
     )
     ct = plt.contour(
         np.linspace(-3.25, 3.75, 29), dims["lev"],
-        data_sel["qc"]["CNTL"], levels=[-6, -3, 3, 6]
+        data_sel["rthratenlw"]["CNTL"], levels=[-6, -3, 3, 6]
         , colors="k", linewidths=2
     )
     plt.gca().invert_xaxis()
@@ -99,10 +92,10 @@ def main():
     plt.yticks([1000, 800, 600, 400, 300, 200],
                 ["1000", "800", "600", "400", "300", "200"])
     plt.ylim(1000, 150)
-    plt.title("Convective Heating Difference (NCRF - CNTL)")
+    plt.title("LW Heating Difference (NCRF - CNTL)")
     plt.clabel(ct, inline=True, fontsize=12, fmt="%.1f")
-    plt.colorbar(p, label=r"$\delta Q_c$ (K/day)")
-    plt.savefig("/home/b11209013/2025_Research/AOGS/Figure/dqc.png", dpi=300, bbox_inches="tight")
+    plt.colorbar(p, label=r"$\delta Q_{LW}$ (K/day)")
+    plt.savefig("/home/b11209013/2025_Research/AOGS/Figure/dqlw.png", dpi=300, bbox_inches="tight")
     plt.close()
     print("Finished: Plotting data") 
     
